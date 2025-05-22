@@ -1,0 +1,119 @@
+.experiencia-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.experiencia-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.experiencia-table th,
+.experiencia-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.experiencia-table th {
+  background-color: #0078d4;
+  color: white;
+}
+
+.repos-container h3 {
+  margin-bottom: 0.5rem;
+}
+
+.repos-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.repos-container ul li {
+  margin-bottom: 0.5rem;
+}
+
+.repos-container ul li a {
+  color: #0078d4;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.repos-container ul li a:hover {
+  color: #005fa3;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.carousel-image {
+  max-width: 300px;
+  max-height: 200px;
+  border-radius: 8px;
+  cursor: pointer;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .experiencia-table, .experiencia-table thead, .experiencia-table tbody, .experiencia-table th, .experiencia-table td, .experiencia-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .experiencia-table tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5rem;
+  }
+
+  .experiencia-table th {
+    display: none;
+  }
+
+  .experiencia-table td {
+    padding-left: 50%;
+    position: relative;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .experiencia-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0.75rem;
+    top: 0.75rem;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}

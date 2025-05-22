@@ -1,0 +1,18 @@
+.sobre-mi-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+  color: #333;
+}
+
+.sobre-mi-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.sobre-mi-container p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}

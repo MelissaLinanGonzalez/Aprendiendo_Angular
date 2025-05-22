@@ -1,0 +1,32 @@
+<div class="experiencia-container">
+  <h2>Mi Experiencia</h2>
+
+  <table class="experiencia-table">
+    <tr>
+      <td data-label="Empresa">Nibble Electric</td>
+      <td data-label="Rol">FCT. Desarrollando diagramas eléctricos, diseños en 3D y cableado de cuadros eléectricos</td>
+      <td data-label="Año">Abril-2023 / Junio-2023</td>
+    </tr>
+    <tr>
+      <td data-label="Empresa">Universidad de Córdoba, Vicerrectorado de Transformación digital y Gestión de Bases de Datos</td>
+      <td data-label="Rol">Prácticas. Desarrollando programa con PHP y Symfony</td>
+      <td data-label="Año">Enero-2025 / Marzo-2025</td>
+    </tr>
+    <tr>
+      <td data-label="Empresa">Mesón Rejano</td>
+      <td data-label="Rol">Camarera</td>
+      <td data-label="Año">2020 - Actualidad</td>
+    </tr>
+  </table>
+
+  <div class="carousel-container">
+    <button (click)="anterior()">‹</button>
+
+    <a [href]="repos[indiceActual].url" target="_blank" class="carousel-link" title="{{ repos[indiceActual].nombre }}">
+      <img [src]="repos[indiceActual].imagen" [alt]="repos[indiceActual].nombre" class="carousel-image">
+    </a>
+
+    <button (click)="siguiente()">›</button>
+  </div>
+
+</div>
